@@ -14,7 +14,8 @@
         "symfony/framework-bundle": "6.1.*",
         "symfony/monolog-bundle": "^3.8",
         "symfony/runtime": "6.1.*",
-        "symfony/yaml": "6.1.*"
+        "symfony/yaml": "6.1.*",
+        "twig/twig": "^3.4"
     },
     "config": {
         "allow-plugins": {
