@@ -4,15 +4,15 @@ namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-class LuckyController
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+
+
+class forumLogin extends  AbstractController
 {
     #[Route('/')]
-    public function number(): Response
+    public function Login(): Response
     {
-        $number = random_int(0, 100);
-
-        return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
-        );
+        
+        return $this->render('app-form/login-form.html.twig');
     }
 }
